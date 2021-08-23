@@ -1,10 +1,12 @@
 import React from "react";
 
+import DrumMachine from "./components/DrumMachine";
+
 function App() {
   return (
-    <div>
-     
-    </div>
+    <main className="w-full h-full min-h-screen">
+      <DrumMachine />
+    </main>
   );
 }
 
