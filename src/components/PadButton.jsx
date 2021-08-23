@@ -4,11 +4,15 @@ import DrumContext from "../context/DrumContext";
 const PadButton = ({ item }) => {
   const { handleDispatch } = useContext(DrumContext);
 
-  useEffect(() => {
-    document.addEventListener("keydown", (e) => {
+  const handleKeyPress = (e) => {
+    if (e.key.toUpperCase() === item.keyTrigger) {
       handleDispatch("SOUND_TRACK", e.key.toUpperCase());
-    });
-    return () => document.removeEventListener("keydown", (e) => console.log(e));
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyPress);
+    return () => document.removeEventListener("keydown", handleKeyPress);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
