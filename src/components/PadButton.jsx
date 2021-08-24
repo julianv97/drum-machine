@@ -22,8 +22,8 @@ const PadButton = ({ item }) => {
     <div
       className={
         !(state.isSound === item.id)
-          ? "bg-gray-500 w-20 h-20 cursor-pointer flex items-center justify-center rounded-md shadow-2xl hover:bg-blue-700"
-          : "bg-blue-700 w-20 h-20 cursor-pointer flex items-center justify-center rounded-md"
+          ? "bg-gray-300 w-20 h-20 md:w-24 md:h-24 cursor-pointer flex items-center justify-center rounded-md shadow-2xl hover:bg-regal-purple"
+          : "bg-regal-purple w-18 h-18 md:w-22 md:h-22 cursor-pointer flex items-center justify-center rounded-md"
       }
       onClick={() => handleDispatch("SOUND_TRACK", refAudio.current)}
     >

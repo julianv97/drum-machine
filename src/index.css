@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+     
+     input[type="range"]::-webkit-slider-thumb {
+         width: 10px;
+         -webkit-appearance: none;
+           appearance: none;
+         height: 10px;
+        
+         background: white;
+         box-shadow: -405px 0 0 400px #6C72CB;
+         border-radius: 50%;
+         
+     }
+ }

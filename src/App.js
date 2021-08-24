@@ -4,7 +4,7 @@ import DrumMachine from "./components/DrumMachine";
 
 function App() {
   return (
-    <main className="w-full h-full min-h-screen flex  justify-center bg-gray-400">
+    <main className="w-full h-full min-h-screen flex items-center justify-center bg-regal-black">
       <DrumMachine />
     </main>
   );

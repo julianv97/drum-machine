@@ -13,7 +13,7 @@ const SwitchButton = ({ state, action, label, bg }) => {
           checked={state}
           onChange={() => handleDispatch(action, !state)}
           className={`${
-            state ? "bg-blue-600" : bg
+            state ? "bg-regal-purple" : bg
           } relative inline-flex items-center h-6 rounded-full w-11 transform ease-in-out duration-200`}
         >
           <span className="sr-only">Enable power</span>

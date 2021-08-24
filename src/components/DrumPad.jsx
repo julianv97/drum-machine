@@ -6,7 +6,7 @@ import PadButton from "./PadButton";
 const DrumPad = () => {
   const { state } = useContext(DrumContext);
   return (
-    <div className="grid grid-cols-3 gap-2">
+    <div className="grid grid-cols-3 gap-2 ">
       {state.bank.map((item) => (
         <PadButton key={item.id} item={item} />
       ))}
