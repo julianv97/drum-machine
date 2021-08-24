@@ -50,7 +50,7 @@ export const bankOne = [
   {
     keyCode: 67,
     keyTrigger: "C",
-    id: "Closed-HH",
+    id: "Closed-H",
     url: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
   },
 ];
@@ -83,7 +83,7 @@ export const bankTwo = [
   {
     keyCode: 83,
     keyTrigger: "S",
-    id: "Open-HH",
+    id: "Open-H",
     url: "https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3",
   },
   {
